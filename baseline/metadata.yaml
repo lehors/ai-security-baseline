@@ -1,22 +1,21 @@
-title: Open Source Project Security Baseline
+title: AI Project Security Baseline
 metadata:
-  id: osps-baseline
+  id: aips-baseline
   type: ControlCatalog
-  gemara-version: v1.0.0-rc.2
-  description: |
-    The Open Source Project Security (OSPS) Baseline is a set of security criteria that projects should meet to demonstrate a strong security posture.
-  draft: true
+  gemara-version: v1.0.0
+  description: The Open Source AI Project Governance and Security Baseline (OSAIPGS Baseline) is IBM's framework extending OpenSSF principles to address unique challenges in AI system development and deployment. It establishes minimum requirements across three maturity levels.
+  draft: false
   author:
-    id: baseline-authors
-    name: OSPS Baseline Authors
+    id: ibm-ai-baseline-authors
+    name: IBM AI Baseline Authors
     type: Human
   applicability-groups:
     - id: maturity-1
-      title: Maturity Level 1
-      description: for any code or non-code project with any number of maintainers or users
+      title: Maturity Level 1 - Foundational
+      description: Foundational security controls for AI projects covering basic governance, supply chain, data integrity, model robustness, deployment, and transparency.
     - id: maturity-2
-      title: Maturity Level 2
-      description: for any code project that has at least 2 maintainers and a small number of consistent users
+      title: Maturity Level 2 - Intermediate
+      description: Intermediate security controls for AI projects adding formal policies, advanced scanning, continuous testing, and enhanced monitoring.
     - id: maturity-3
-      title: Maturity Level 3
-      description: for any code project that has a large number of consistent users
+      title: Maturity Level 3 - Advanced
+      description: Advanced security controls for AI projects requiring regulatory compliance, cryptographic signing, third-party testing, runtime safeguards, and incident reporting.

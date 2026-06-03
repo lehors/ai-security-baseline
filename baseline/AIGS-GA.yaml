@@ -1,0 +1,219 @@
+title: AI Project Security Baseline - Governance and Accountability
+metadata:
+  id: aips-baseline-ga
+  type: ControlCatalog
+  gemara-version: v1.0.0
+  description: Governance and Accountability controls from the Open Source AI Project Governance and Security Baseline.
+  draft: false
+  parent-id: aips-baseline
+  domain: Governance and Accountability
+  author:
+    id: ibm-ai-baseline-authors
+    name: IBM AI Baseline Authors
+    type: Human
+groups:
+  - id: GA
+    title: Governance and Accountability
+    description: Controls for governance and accountability.
+controls:
+  - id: AIGS-GA-01
+    title: Contributor Roles and Responsibilities
+    objective: The project MUST document the roles and responsibilities for maintainers and contributors to the AI project's lifecycle from development to deployment and ongoing monitoring.
+    group: GA
+    assessment-requirements:
+      - id: AIGS-GA-01.01
+        text: Roles and responsibilities for maintainers and contributors MUST be documented
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-01.02
+        text: Documentation MUST cover the entire lifecycle from development to deployment and ongoing monitoring
+        applicability:
+          - maturity-1
+  - id: AIGS-GA-02
+    title: Model Governance
+    objective: The project MUST provide written, documented disclosure of the AI models ingested in, called, or otherwise used in the development or deployment of the open source AI project.
+    group: GA
+    assessment-requirements:
+      - id: AIGS-GA-02.01
+        text: Model name MUST be disclosed
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-02.02
+        text: Developer MUST be disclosed
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-02.03
+        text: Release date MUST be disclosed
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-02.04
+        text: License MUST be disclosed
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-02.05
+        text: Model description MUST be disclosed
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-02.06
+        text: Deployment status MUST be disclosed (as necessary)
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-02.07
+        text: URL to open source model repository or model release announcement MUST be provided (if available)
+        applicability:
+          - maturity-1
+  - id: AIGS-GA-03
+    title: Data Governance
+    objective: The project MUST disclose datasets ingested in or otherwise used in the development or deployment of the open source AI project. This includes datasets used for training, testing, and validation.
+    group: GA
+    assessment-requirements:
+      - id: AIGS-GA-03.01
+        text: Dataset name MUST be disclosed
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-03.02
+        text: Country of origin MUST be disclosed
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-03.03
+        text: License MUST be disclosed
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-03.04
+        text: Description MUST be disclosed
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-03.05
+        text: Data processing information MUST be disclosed (if any)
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-03.06
+        text: Public URL MUST be provided (if available)
+        applicability:
+          - maturity-1
+  - id: AIGS-GA-04
+    title: Licensing
+    objective: While active, the project MUST specify a license for the model weights and model files.
+    group: GA
+    assessment-requirements:
+      - id: AIGS-GA-04.01
+        text: License for model weights MUST be specified
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-04.02
+        text: License for model files MUST be specified
+        applicability:
+          - maturity-1
+  - id: AIGS-GA-05
+    title: Ethics and Intended Use
+    objective: The project MUST define and document the intended use of the open source AI project, including the ethical principles that guide open source AI project development and deployment.
+    group: GA
+    assessment-requirements:
+      - id: AIGS-GA-05.01
+        text: Intended use MUST be defined and documented
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-05.02
+        text: Ethical principles MUST be documented
+        applicability:
+          - maturity-1
+  - id: AIGS-GA-06
+    title: Project Inventory
+    objective: The project MUST maintain an inventory of its components, tooling, systems and applications, disclosed within the README of the repository where the project is made available.
+    group: GA
+    assessment-requirements:
+      - id: AIGS-GA-06.01
+        text: Inventory of components MUST be maintained
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-06.02
+        text: Inventory of tooling MUST be maintained
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-06.03
+        text: Inventory of systems MUST be maintained
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-06.04
+        text: Inventory of applications MUST be maintained
+        applicability:
+          - maturity-1
+      - id: AIGS-GA-06.05
+        text: Inventory MUST be disclosed in the project README
+        applicability:
+          - maturity-1
+  - id: AIGS-GA-07
+    title: AI Policy
+    objective: The project MUST define an AI policy with i) principles that guide all activities of the organization related to AI and ii) processes for handling deviations and exceptions to policy.
+    group: GA
+    assessment-requirements:
+      - id: AIGS-GA-07.01
+        text: AI policy MUST define principles guiding AI activities
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-GA-07.02
+        text: AI policy MUST define processes for handling deviations
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-GA-07.03
+        text: AI policy MUST define processes for handling exceptions
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-GA-07.04
+        text: Policy MUST cover AI resources and assets
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-GA-07.05
+        text: Policy MUST cover AI system impact assessment scope
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-GA-07.06
+        text: Policy MUST cover AI project secure development
+        applicability:
+          - maturity-1
+          - maturity-2
+  - id: AIGS-GA-08
+    title: Regulatory Compliance
+    objective: To the extent the open source AI project meets regulatory requirements and standards for the deployment of AI models and systems, the project MUST disclose (non-)compliance.
+    group: GA
+    assessment-requirements:
+      - id: AIGS-GA-08.01
+        text: Regulatory compliance status MUST be assessed
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-GA-08.02
+        text: Compliance or non-compliance MUST be disclosed
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+  - id: AIGS-GA-09
+    title: AI Bill of Materials
+    objective: While active, structured disclosures of relevant model and data metadata relevant to AI project development and deployment MUST be made available in machine-readable format to inform downstream risk-based controls.
+    group: GA
+    assessment-requirements:
+      - id: AIGS-GA-09.01
+        text: Model metadata MUST be disclosed in machine-readable format
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-GA-09.02
+        text: Data metadata MUST be disclosed in machine-readable format
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-GA-09.03
+        text: Disclosure MUST be available while project is active
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3

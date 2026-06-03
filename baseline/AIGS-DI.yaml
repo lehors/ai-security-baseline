@@ -1,0 +1,211 @@
+title: AI Project Security Baseline - Data Integrity
+metadata:
+  id: aips-baseline-di
+  type: ControlCatalog
+  gemara-version: v1.0.0
+  description: Data Integrity controls from the Open Source AI Project Governance and Security Baseline.
+  draft: false
+  parent-id: aips-baseline
+  domain: Data Integrity
+  author:
+    id: ibm-ai-baseline-authors
+    name: IBM AI Baseline Authors
+    type: Human
+groups:
+  - id: DI
+    title: Data Integrity
+    description: Controls for data integrity.
+controls:
+  - id: AIGS-DI-01
+    title: Enforceable Data Policy
+    objective: Track the origin and lineage of all data used for training and testing AI models.
+    group: DI
+    assessment-requirements:
+      - id: AIGS-DI-01.01
+        text: Origin of all training data MUST be tracked
+        applicability:
+          - maturity-1
+      - id: AIGS-DI-01.02
+        text: Origin of all testing data MUST be tracked
+        applicability:
+          - maturity-1
+      - id: AIGS-DI-01.03
+        text: Lineage of all training data MUST be tracked
+        applicability:
+          - maturity-1
+      - id: AIGS-DI-01.04
+        text: Lineage of all testing data MUST be tracked
+        applicability:
+          - maturity-1
+  - id: AIGS-DI-02
+    title: Data Security
+    objective: The project MUST implement robust security controls to protect the confidentiality, integrity, and availability of data.
+    group: DI
+    assessment-requirements:
+      - id: AIGS-DI-02.01
+        text: Authentication controls MUST be implemented
+        applicability:
+          - maturity-1
+      - id: AIGS-DI-02.02
+        text: Authorization controls MUST be implemented
+        applicability:
+          - maturity-1
+      - id: AIGS-DI-02.03
+        text: Confidentiality of data MUST be protected
+        applicability:
+          - maturity-1
+      - id: AIGS-DI-02.04
+        text: Integrity of data MUST be protected
+        applicability:
+          - maturity-1
+      - id: AIGS-DI-02.05
+        text: Availability of data MUST be protected
+        applicability:
+          - maturity-1
+  - id: AIGS-DI-03
+    title: Data Least Privilege Access
+    objective: Data access controls MUST be clearly documented and follow the principles of least privilege access.
+    group: DI
+    assessment-requirements:
+      - id: AIGS-DI-03.01
+        text: Data access controls MUST be documented
+        applicability:
+          - maturity-1
+      - id: AIGS-DI-03.02
+        text: Least privilege principle MUST be applied to data access
+        applicability:
+          - maturity-1
+  - id: AIGS-DI-04
+    title: Sensitive and Copyright Data Leakage Prevention
+    objective: The project MUST implement controls and testing to prevent the project from inadvertently revealing sensitive information (e.g., PII, proprietary data) from its training set.
+    group: DI
+    assessment-requirements:
+      - id: AIGS-DI-04.01
+        text: Controls to prevent PII leakage MUST be implemented
+        applicability:
+          - maturity-1
+      - id: AIGS-DI-04.02
+        text: Controls to prevent proprietary data leakage MUST be implemented
+        applicability:
+          - maturity-1
+      - id: AIGS-DI-04.03
+        text: Testing for sensitive data leakage MUST be performed
+        applicability:
+          - maturity-1
+  - id: AIGS-DI-05
+    title: Dataset Cataloguing
+    objective: Datasets used for training and evaluation MUST be tracked and versioned to ensure traceability and reproducibility.
+    group: DI
+    assessment-requirements:
+      - id: AIGS-DI-05.01
+        text: Training datasets MUST be tracked and versioned
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-DI-05.02
+        text: Evaluation datasets MUST be tracked and versioned
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-DI-05.03
+        text: Traceability of datasets MUST be ensured
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-DI-05.04
+        text: Reproducibility of datasets MUST be ensured
+        applicability:
+          - maturity-1
+          - maturity-2
+  - id: AIGS-DI-06
+    title: Dataset Risk Assessment
+    objective: "The project MUST assess datasets for, at a minimum: legal and copyright risk, licensing compatibility with project intended use, and security risks (e.g., data poisoning, PII/SPI)."
+    group: DI
+    assessment-requirements:
+      - id: AIGS-DI-06.01
+        text: Legal risk assessment MUST be performed
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-DI-06.02
+        text: Copyright risk assessment MUST be performed
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-DI-06.03
+        text: Licensing compatibility assessment MUST be performed
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-DI-06.04
+        text: Data poisoning risk assessment MUST be performed
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-DI-06.05
+        text: PII/SPI risk assessment MUST be performed
+        applicability:
+          - maturity-1
+          - maturity-2
+  - id: AIGS-DI-07
+    title: Data Risk Minimization
+    objective: The project MUST implement controls to limit the use of unnecessary or high-risk data.
+    group: DI
+    assessment-requirements:
+      - id: AIGS-DI-07.01
+        text: Controls to limit unnecessary data MUST be implemented
+        applicability:
+          - maturity-1
+          - maturity-2
+      - id: AIGS-DI-07.02
+        text: Controls to limit high-risk data MUST be implemented
+        applicability:
+          - maturity-1
+          - maturity-2
+  - id: AIGS-DI-08
+    title: Full Audit Logging
+    objective: Read or write access to data must be logged, with timestamp, user id, action performed (read/write), and dataset id and version(s) accessed.
+    group: DI
+    assessment-requirements:
+      - id: AIGS-DI-08.01
+        text: All read access MUST be logged
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-DI-08.02
+        text: All write access MUST be logged
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-DI-08.03
+        text: Timestamp MUST be recorded for all access
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-DI-08.04
+        text: User ID MUST be recorded for all access
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-DI-08.05
+        text: Action performed MUST be recorded
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-DI-08.06
+        text: Dataset ID MUST be recorded
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3
+      - id: AIGS-DI-08.07
+        text: Dataset version(s) accessed MUST be recorded
+        applicability:
+          - maturity-1
+          - maturity-2
+          - maturity-3

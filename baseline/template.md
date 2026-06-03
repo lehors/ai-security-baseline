@@ -52,7 +52,7 @@ For more information on the project and to make contributions, visit the [GitHub
 {{- $req := . }}
 {{- if and (not (isRetired .State)) (maxLevel .Applicability 1) }}
 **[{{ $req.Id }}]({{ $req.Id | asLink }})**: {{ $req.Text | addLinks }}
-{{- end }}
+{{ end }}
 {{- end }}
 {{- end }}
 
@@ -62,7 +62,7 @@ For more information on the project and to make contributions, visit the [GitHub
 {{- $req := . }}
 {{- if and (not (isRetired .State)) (maxLevel .Applicability 2) }}
 **[{{ $req.Id }}]({{ $req.Id | asLink }})**: {{ $req.Text | addLinks }}
-{{- end }}
+{{ end }}
 {{- end }}
 {{- end }}
 
@@ -72,7 +72,7 @@ For more information on the project and to make contributions, visit the [GitHub
 {{- $req := . }}
 {{- if and (not (isRetired .State)) (maxLevel .Applicability 3) }}
 **[{{ $req.Id }}]({{ $req.Id | asLink }})**: {{ $req.Text | addLinks }}
-{{- end }}
+{{ end }}
 {{- end }}
 {{- end }}
 
