@@ -25,10 +25,14 @@ controls:
         text: Guardrails MUST be implemented to mitigate identified risks
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-DP-01.02
         text: Guardrails MUST mitigate against prompt injection attacks (at minimum)
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
   - id: AIGS-DP-02
     title: Vulnerability Disclosure Mechanism
     objective: The project MUST have a defined communication channel or mechanism through which vulnerabilities and other security-related information may be disclosed to the project contributors and maintainers.
@@ -38,10 +42,14 @@ controls:
         text: Communication channel for vulnerability disclosure MUST be defined
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-DP-02.02
         text: Mechanism for security-related information disclosure MUST be defined
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
   - id: AIGS-DP-03
     title: Insecure Output Handling
     objective: The project MUST validate and sanitize model outputs to prevent downstream vulnerabilities.
@@ -51,10 +59,14 @@ controls:
         text: Model output validation MUST be implemented
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-DP-03.02
         text: Model output sanitization MUST be implemented
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
   - id: AIGS-DP-04
     title: Deployment Infrastructure
     objective: Access to models, tools and tool calling functionality, and general deployment scaffolding or infrastructure MUST follow least-privilege principles.
@@ -63,18 +75,18 @@ controls:
       - id: AIGS-DP-04.01
         text: Access to models MUST follow least-privilege principles
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-DP-04.02
         text: Access to tools and tool calling MUST follow least-privilege principles
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-DP-04.03
         text: Access to deployment infrastructure MUST follow least-privilege principles
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
   - id: AIGS-DP-05
     title: Logging and Monitoring
     objective: The project MUST implement logging and monitoring for deployment environments, including tool use, to detect misuse or anomalies.
@@ -83,23 +95,23 @@ controls:
       - id: AIGS-DP-05.01
         text: Logging for deployment environments MUST be implemented
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-DP-05.02
         text: Monitoring for deployment environments MUST be implemented
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-DP-05.03
         text: Tool use logging MUST be implemented
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-DP-05.04
         text: Anomaly detection MUST be implemented
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
   - id: AIGS-DP-06
     title: Incident Response Procedures
     objective: The project MUST define procedures for responding to security incidents involving the AI project in a timely manner.
@@ -108,13 +120,13 @@ controls:
       - id: AIGS-DP-06.01
         text: Incident response procedures MUST be defined
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-DP-06.02
         text: Procedures MUST ensure timely response to incidents
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
   - id: AIGS-DP-07
     title: Project Maintenance
     objective: The project MUST document processes for releasing model updates and security patches.
@@ -123,13 +135,13 @@ controls:
       - id: AIGS-DP-07.01
         text: Model update release processes MUST be documented
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-DP-07.02
         text: Security patch release processes MUST be documented
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
   - id: AIGS-DP-08
     title: Runtime Safeguards
     objective: Deployment environments MUST include runtime safeguards for detecting and mitigating malicious inputs and outputs and unexpected or unauthorized system-level behavior.
@@ -138,38 +150,26 @@ controls:
       - id: AIGS-DP-08.01
         text: Malicious input detection MUST be implemented
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-DP-08.02
         text: Malicious output detection MUST be implemented
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-DP-08.03
         text: Malicious input mitigation MUST be implemented
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-DP-08.04
         text: Malicious output mitigation MUST be implemented
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-DP-08.05
         text: Unexpected behavior detection MUST be implemented
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-DP-08.06
         text: Unauthorized system-level behavior detection MUST be implemented
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
   - id: AIGS-DP-09
     title: Kill Switch
@@ -179,18 +179,12 @@ controls:
       - id: AIGS-DP-09.01
         text: Security mechanism MUST be implemented to halt/disable the AI project
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-DP-09.02
         text: Mechanism MUST be able to contain the AI project
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-DP-09.03
         text: Mechanism MUST enable immediate action
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3

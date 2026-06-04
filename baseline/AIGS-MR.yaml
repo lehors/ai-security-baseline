@@ -25,14 +25,20 @@ controls:
         text: Red teaming MUST be conducted
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-MR-01.02
         text: Red teaming MUST screen for adversarial attack vulnerabilities
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-MR-01.03
         text: Red teaming MUST include prompt injection attack screening
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
   - id: AIGS-MR-02
     title: Model Evaluations
     objective: Prior to deployment, the project team MUST test against publicly available or manually-created, task-specific benchmarks in order to evaluate, quantify, and validate the resilience of the AI project against common vulnerabilities.
@@ -42,22 +48,32 @@ controls:
         text: Testing MUST be performed before deployment
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-MR-02.02
         text: Testing MUST use publicly available benchmarks or manually-created task-specific benchmarks
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-MR-02.03
         text: Model resilience against common vulnerabilities MUST be evaluated
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-MR-02.04
         text: Model resilience MUST be quantified
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-MR-02.05
         text: Model resilience MUST be validated
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
   - id: AIGS-MR-03
     title: Continuous Testing
     objective: The project MUST continuously implement red teaming and evaluations prior to pushing system updates or model re-training into production.
@@ -66,23 +82,23 @@ controls:
       - id: AIGS-MR-03.01
         text: Red teaming MUST be continuously implemented
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-MR-03.02
         text: Evaluations MUST be continuously implemented
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-MR-03.03
         text: Testing MUST occur before production pushes
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-MR-03.04
         text: Testing MUST occur before model re-training
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
   - id: AIGS-MR-04
     title: Regression Testing
     objective: The project MUST maintain regression tests for safety and security behaviors to prevent regression during updates.
@@ -91,13 +107,13 @@ controls:
       - id: AIGS-MR-04.01
         text: Regression tests for safety behaviors MUST be maintained
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-MR-04.02
         text: Regression tests for security behaviors MUST be maintained
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
   - id: AIGS-MR-05
     title: Evaluation Coverage
     objective: The project MUST document the scope and limitations of testing.
@@ -106,13 +122,13 @@ controls:
       - id: AIGS-MR-05.01
         text: Scope of testing MUST be documented
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-MR-05.02
         text: Limitations of testing MUST be documented
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
   - id: AIGS-MR-06
     title: Third-Party Red Teaming
     objective: The project MUST conduct or commission independent testing for adversarial robustness from trusted third-parties.
@@ -121,20 +137,14 @@ controls:
       - id: AIGS-MR-06.01
         text: Independent third-party testing MUST be conducted
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-MR-06.02
         text: Third-parties MUST be trusted
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-MR-06.03
         text: Adversarial robustness testing MUST be performed
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
   - id: AIGS-MR-07
     title: Robustness Benchmark Testing
@@ -144,18 +154,12 @@ controls:
       - id: AIGS-MR-07.01
         text: Runtime evaluation against standardized benchmarks MUST be performed
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-MR-07.02
         text: Benchmark suite MUST be standardized
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-MR-07.03
         text: Benchmark suite MUST evolve over time
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3

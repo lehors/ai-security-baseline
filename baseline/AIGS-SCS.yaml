@@ -25,18 +25,26 @@ controls:
         text: Controls to detect poisoned data MUST be implemented
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-SCS-01.02
         text: Controls to prevent poisoned data sourcing MUST be implemented
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-SCS-01.03
         text: Controls MUST be documented
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-SCS-01.04
         text: Controls MUST be disclosed
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
   - id: AIGS-SCS-02
     title: Ethical Web Crawling
     objective: To the extent web crawling is used to source data, web crawling activity MUST respect robots.txt requirements, the crawler MUST be clearly identified, and web crawling activity MUST be disclosed in project documentation.
@@ -46,14 +54,20 @@ controls:
         text: Web crawling activity MUST respect robots.txt requirements (if applicable)
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-SCS-02.02
         text: Crawler MUST be clearly identified
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-SCS-02.03
         text: Web crawling activity MUST be disclosed in project documentation
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
   - id: AIGS-SCS-03
     title: Change Control
     objective: The project MUST use a version control system and have a documented process for reviewing and approving changes.
@@ -63,14 +77,20 @@ controls:
         text: Version control system MUST be used
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-SCS-03.02
         text: Process for reviewing changes MUST be documented
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-SCS-03.03
         text: Process for approving changes MUST be documented
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
   - id: AIGS-SCS-04
     title: AI Components Scanning
     objective: Embedded AI components MUST be scanned as part of development workflows, including CI/CD pipelines, to prevent application security risks from malicious or otherwise compromised components.
@@ -79,23 +99,23 @@ controls:
       - id: AIGS-SCS-04.01
         text: AI components MUST be scanned in development workflows
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-SCS-04.02
         text: AI components MUST be scanned in CI/CD pipelines
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-SCS-04.03
         text: Scanning MUST detect malicious components
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-SCS-04.04
         text: Scanning MUST detect compromised components
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
   - id: AIGS-SCS-05
     title: Training Pipeline Integrity
     objective: The project MUST document and secure the training pipeline used to produce model artifacts, including dependencies, training code, and environment configuration.
@@ -104,28 +124,28 @@ controls:
       - id: AIGS-SCS-05.01
         text: Training pipeline MUST be documented
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-SCS-05.02
         text: Training pipeline MUST be secured
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-SCS-05.03
         text: Dependencies MUST be documented and secured
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-SCS-05.04
         text: Training code MUST be documented and secured
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-SCS-05.05
         text: Environment configuration MUST be documented and secured
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
   - id: AIGS-SCS-06
     title: Model Provenance
     objective: "The project MUST maintain provenance records linking: model artifacts, training datasets, training code, and training parameters."
@@ -134,18 +154,18 @@ controls:
       - id: AIGS-SCS-06.01
         text: Provenance records MUST link model artifacts to training datasets
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-SCS-06.02
         text: Provenance records MUST link model artifacts to training code
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-SCS-06.03
         text: Provenance records MUST link model artifacts to training parameters
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
   - id: AIGS-SCS-07
     title: Reproducible Builds
     objective: Where feasible, the project SHOULD support reproducible model builds such that independent parties can recreate the model artifacts from disclosed inputs.
@@ -154,13 +174,13 @@ controls:
       - id: AIGS-SCS-07.01
         text: Reproducible model builds SHOULD be supported (where feasible)
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
       - id: AIGS-SCS-07.02
         text: Independent parties SHOULD be able to recreate model artifacts
         applicability:
-          - maturity-1
           - maturity-2
+          - maturity-3
   - id: AIGS-SCS-08
     title: Model Integrity
     objective: The project MUST sign AI models, model files, and/or other release artifacts with cryptographic tools and verify them before deployment to prevent the introduction of untrusted components.
@@ -169,24 +189,16 @@ controls:
       - id: AIGS-SCS-08.01
         text: AI models MUST be signed with cryptographic tools
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-SCS-08.02
         text: Model files MUST be signed with cryptographic tools
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-SCS-08.03
         text: Release artifacts MUST be signed with cryptographic tools
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-SCS-08.04
         text: Signatures MUST be verified before deployment
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3

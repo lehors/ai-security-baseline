@@ -25,10 +25,14 @@ controls:
         text: Explanations for design decisions affecting performance MUST be provided (where feasible)
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-TE-01.02
         text: Explanations for design decisions affecting security MUST be provided (where feasible)
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
   - id: AIGS-TE-02
     title: System Documentation
     objective: Project contributors MUST maintain clear and comprehensive documentation for the AI system, including its intended use, limitations, and potential risks.
@@ -38,14 +42,20 @@ controls:
         text: Documentation for intended use MUST be maintained
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-TE-02.02
         text: Documentation for limitations MUST be maintained
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
       - id: AIGS-TE-02.03
         text: Documentation for potential risks MUST be maintained
         applicability:
           - maturity-1
+          - maturity-2
+          - maturity-3
   - id: AIGS-TE-03
     title: Residual Risk Documentation
     objective: The project MUST document residual risks and known limitations of safeguards.
@@ -54,14 +64,10 @@ controls:
       - id: AIGS-TE-03.01
         text: Residual risks MUST be documented
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-TE-03.02
         text: Known safeguard limitations MUST be documented
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
   - id: AIGS-TE-04
     title: Security Incident Reporting
@@ -71,24 +77,16 @@ controls:
       - id: AIGS-TE-04.01
         text: Public record of incidents MUST be maintained
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-TE-04.02
         text: Safety incidents MUST be recorded
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-TE-04.03
         text: Security incidents MUST be recorded
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
       - id: AIGS-TE-04.04
         text: Ex post mitigations MUST be recorded
         applicability:
-          - maturity-1
-          - maturity-2
           - maturity-3
