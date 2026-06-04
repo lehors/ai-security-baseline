@@ -3,6 +3,7 @@ metadata:
   id: aips-baseline
   type: ControlCatalog
   gemara-version: v1.0.0
+  version: "2026-03-06"
   description: The Open Source AI Project Governance and Security Baseline (OSAIPGS Baseline) is IBM's framework extending OpenSSF principles to address unique challenges in AI system development and deployment. It establishes minimum requirements across three maturity levels.
   draft: false
   author:
